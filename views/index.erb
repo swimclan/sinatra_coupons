@@ -1,0 +1,15 @@
+<h3>All of the coupons</h3>
+
+<ol>
+<% @coupons.each do |coupon| %>
+
+  <li>Coupon Title: <%= coupon.title %>
+    <ul>
+      <li>Discount Amount: <%= coupon.discount_amount %></li>
+      <li> Discount Description: <%= coupon.description %></li>
+      <li> Expires: <%= coupon.expiration_date %></li>
+    </ul>
+
+<% end %>
+
+</ol>
